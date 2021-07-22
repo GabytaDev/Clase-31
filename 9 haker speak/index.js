@@ -14,16 +14,22 @@
 // '4D4 L0V3L4C3'
 
 const aHackerSpeak = (str) =>{
-  
-    str.replace(/[i]/gi,"1")
-    str.replace(/[e]/gi,"3")
-    str.replace(/[a]/gi,"4")
-    str.replace(/[s]/gi,"5")
-    str.replace(/[o]/gi,"0")
-  
-    return str.replace ("javscript")
-    
+ 
+    const conversion1 = str.replace(/[i]/gi,"1") //el str lo guardo en conversion1 con el reemplazo
+    const conversion2 = conversion1.replace(/[e]/gi,"3") // a conversion 1 , le paso nuevos reemplzos y lo guardo en conversion2
+    const conversion3 = conversion2.replace(/[a]/gi,"4")
+    const conversion4 = conversion3.replace(/[s]/gi,"5")
+    const conversion5 = conversion4.replace(/[o]/gi,"0")
+
+   return conversion5 //retorna la ultima conversion con todos los reemplazos
+   
 }
+  
 aHackerSpeak('javascript');
 
-console.log (aHackerSpeak("javascript"));  
+console.log (aHackerSpeak('javascript'));
+
+console.log (aHackerSpeak('soy una hacker'));
+
+console.log ( aHackerSpeak('ADA LOVELACE'));
+
